@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Silat Cekak Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+body{
+    background-color:darkcyan;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+#wrapper{background-color:rgb(29, 70, 70) ;}
+.imageCenter{
+    display:block;
+    margin-left: auto;
+    margin-right: auto ;
+    width: 50%;
+}
+.contents {
+  padding: 16px;
+  background-color: white;
+}
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.homme {
+  background-color: #0b2e25;
+  font-size: large;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+.bgimage{
+  background-image: url("ny.jpg");
+  min-height: 380px;
+  position:sticky;
+  background-position: center;
+  background-size:cover;
+  background-repeat: repeat-y;
+  max-height: fit-content;
+}
+
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+   
+        <a href="https://www.silat.cekak.org.my" target="_blank"><img class="imageCenter" src="banner.png" alt="banner file" ></a>
+  </div></div>
+
+<div class="bgimage">
+  <form action="/action_page.php">
+        <h1 class="center">LOGIN</h1>
+        <hr>
+        <center>
+          <label for="email"><b>Email</b></label><br>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required><br>
+      
+          <label for="psw"><b>Password</b></label><br>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        </hr>
+    <button type="submit" class="registerbtn">Login</button>
+    
+  </center>
+
+</form> 
+<div id="buttonhome">
+  <form action="/action_page.php">
+    <center>
+    <button type="button" class="homme" onclick="location.href='index.html'" class="homme">Home</button>
+    
+  </form>
+</center>
+</div>
+
+</div>
+
+</body>
